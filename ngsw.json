@@ -1,0 +1,83 @@
+{
+  "configVersion": 1,
+  "timestamp": 1674177532660,
+  "index": "https://azizan-azman.github.io/portfolio/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://azizan-azman.github.io/portfolio/195.b4b0c3c63d636018.js",
+        "https://azizan-azman.github.io/portfolio/580.e72226b23bd804e0.js",
+        "https://azizan-azman.github.io/portfolio/716.61e5c7c2da3350bc.js",
+        "https://azizan-azman.github.io/portfolio/868.f519854562c708c1.js",
+        "https://azizan-azman.github.io/portfolio/favicon.ico",
+        "https://azizan-azman.github.io/portfolio/index.html",
+        "https://azizan-azman.github.io/portfolio/main.5fc04f7219ee7220.js",
+        "https://azizan-azman.github.io/portfolio/manifest.webmanifest",
+        "https://azizan-azman.github.io/portfolio/polyfills.e036088dba48c4fd.js",
+        "https://azizan-azman.github.io/portfolio/runtime.655b6e28831c70bc.js",
+        "https://azizan-azman.github.io/portfolio/scripts.8d31108c4a6fe8b6.js",
+        "https://azizan-azman.github.io/portfolio/styles.79086c043b4b87d2.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://azizan-azman.github.io/portfolio/MaterialIcons-Regular.14b0bb77466d9f38.woff",
+        "https://azizan-azman.github.io/portfolio/MaterialIcons-Regular.d1b99623aaa86364.woff2",
+        "https://azizan-azman.github.io/portfolio/MaterialIcons-Regular.fa58bcb97f2ed321.ttf",
+        "https://azizan-azman.github.io/portfolio/apple-touch-icon.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://azizan-azman.github.io/portfolio/195.b4b0c3c63d636018.js": "a30cc5e843cc900c72fbb7de30a0ba4250559e38",
+    "https://azizan-azman.github.io/portfolio/580.e72226b23bd804e0.js": "89a29167dadc2bccc6d2c13dbff43de6a37591c6",
+    "https://azizan-azman.github.io/portfolio/716.61e5c7c2da3350bc.js": "8428bd8b9f195c673e528ee4d113bd25ae96c17d",
+    "https://azizan-azman.github.io/portfolio/868.f519854562c708c1.js": "7a95d164fd34efcc52a2af7953dc05264688881e",
+    "https://azizan-azman.github.io/portfolio/MaterialIcons-Regular.14b0bb77466d9f38.woff": "e5fa525648c74213cdeb8554aa77057f0c4d8488",
+    "https://azizan-azman.github.io/portfolio/MaterialIcons-Regular.d1b99623aaa86364.woff2": "7e67acf56f6d527980504c3d0dd2a30d706e5339",
+    "https://azizan-azman.github.io/portfolio/MaterialIcons-Regular.fa58bcb97f2ed321.ttf": "b582b869fe05f35f5a1d08cdf50b2b5eb37bae44",
+    "https://azizan-azman.github.io/portfolio/apple-touch-icon.png": "229df2094cc590088de00ea97a1eb4e4493101d2",
+    "https://azizan-azman.github.io/portfolio/favicon.ico": "b65083d46bbf63692d5d2cdd69622e6d7ecae317",
+    "https://azizan-azman.github.io/portfolio/index.html": "9d2aa455e47353f8e51223f984c9257e5bc0b378",
+    "https://azizan-azman.github.io/portfolio/main.5fc04f7219ee7220.js": "8ef7abd2f4023d72bbdd641b79d7e05201c3bc9e",
+    "https://azizan-azman.github.io/portfolio/manifest.webmanifest": "b26503edccaf08f809042c2545fd976de1ffab36",
+    "https://azizan-azman.github.io/portfolio/polyfills.e036088dba48c4fd.js": "e8470e4d966a951d6fe4715249960c9f2bd27717",
+    "https://azizan-azman.github.io/portfolio/runtime.655b6e28831c70bc.js": "c8fe23f5029c8402c4129717c1dc6ce5c0bef2e2",
+    "https://azizan-azman.github.io/portfolio/scripts.8d31108c4a6fe8b6.js": "5eb6e9dc48d3eb22e18d49959c5f3ae3c1079e42",
+    "https://azizan-azman.github.io/portfolio/styles.79086c043b4b87d2.css": "b48bb67344b255cc28251aa3561fd9eb28443375"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
