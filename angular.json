@@ -38,7 +38,7 @@
               }
             ],
             "styles": ["src/main.scss"],
-            "scripts": []
+            "scripts": ["node_modules/tw-elements/dist/js/index.min.js"]
           },
           "configurations": {
             "production": {
