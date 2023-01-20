@@ -1,0 +1,44 @@
+<div fxFlex>
+  <mat-sidenav-container fxFill>
+    <mat-sidenav #sidenav [mode]="isMobile ? 'over' : 'side'" [opened]="!isMobile" [disableClose]="!isMobile">
+      <nav class="w-full h-full bg-gray-900 flex flex-col items-center py-7">
+        <div
+          [routerLink]="['/home']"
+          routerLinkActive="border-red-400 border-4"
+          class="w-40 h-40 rounded-full hover:border-4 hover:border-red-300 hover:cursor-pointer mb-10"
+        >
+          <img
+            src="./output/images/sidebar/new_passport_photo.jpg"
+            class="object-cover w-full h-full rounded-full"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col gap-5">
+          <a
+            *ngFor="let sidebarNavigation of sidebarNavigations"
+            [routerLink]="[sidebarNavigation.link]"
+            routerLinkActive="link-underline-active"
+            class="self-start tracking-widest text-white uppercase text-md link link-underline link-underline-black"
+            >{{ sidebarNavigation.title }}</a
+          >
+        </div>
+      </nav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="px-8 py-5">
+        <button mat-icon-button class="hover:bg-gray-300" (click)="sidenav.toggle()">
+          <mat-icon
+            class="{{
+              router.url === '/home' ? 'text-white' : 'text-black'
+            }}  transition duration-200 ease-in-out delay-150"
+            [ngClass]="{ 'rotate-90': sidenav.opened }"
+            >menu
+          </mat-icon>
+        </button>
+      </div>
+      <div class="px-8">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

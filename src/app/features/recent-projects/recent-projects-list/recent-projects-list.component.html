@@ -1,0 +1,29 @@
+<div class="mb-14">
+  <p class="text-3xl font-medium tracking-widest uppercase">Recent Projects</p>
+</div>
+
+<div class="grid grid-cols-1 gap-5 mb-5 lg:grid-cols-3">
+  <div
+    *ngFor="let project of projects"
+    class="flex flex-col gap-5 px-5 py-4 rounded-md shadow-lg bg-gray-50 hover:cursor-pointer hover:bg-opacity-80"
+    [routerLink]="['/recent-projects/project/', project.id]"
+  >
+    <img [src]="project.image" class="object-cover w-full rounded-md h-60" alt="" />
+    <div class="flex flex-col justify-between h-full gap-5">
+      <div class="flex flex-col gap-2">
+        <p class="font-medium text-md">{{ project.projectCategory }}</p>
+        <p class="text-sm">{{ project.projectTitle }}</p>
+      </div>
+
+      <div class="flex items-center justify-between w-full">
+        <div class="flex items-center justify-center px-3 py-1 bg-red-400 rounded-full">
+          <p class="text-xs text-white" style="margin: 0 !important">{{ project.projectType }}</p>
+        </div>
+
+        <p class="text-xs font-thin text-black text-opacity-60" style="margin: 0 !important">
+          {{ project.projectDate }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

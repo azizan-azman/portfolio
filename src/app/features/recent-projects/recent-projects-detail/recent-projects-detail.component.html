@@ -1,0 +1,99 @@
+<ng-container *ngIf="testDataList | async as testData">
+  <div class="mb-10 lg:h-32">
+    <div class="flex flex-col self-start">
+      <p class="text-2xl font-medium tracking-widest uppercase md:text-3xl">
+        {{ testData.pageTitle1 }} <span *ngIf="testData.pageTitle2" class="text-xl md:text-2xl">&</span>
+      </p>
+      <p class="text-2xl font-medium tracking-widest uppercase md:text-3xl">{{ testData.pageTitle2 }}</p>
+      <p class="text-lg md:text-2xl">{{ testData.pageSubtitle }}</p>
+      <hr class="w-full h-1 border-0 rounded" />
+    </div>
+  </div>
+  <div class="flex justify-between w-full mb-10">
+    <ng-container *ngIf="previousProject | async as prev">
+      <button
+        (click)="navigateToProject(prev)"
+        class="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-red-400 bg-transparent border border-red-400 rounded hover:bg-red-400 hover:text-white hover:border-transparent"
+      >
+        <mat-icon class="">subdirectory_arrow_left</mat-icon>
+        <p style="margin: 0px !important">Previous Project</p>
+      </button>
+    </ng-container>
+
+    <ng-container *ngIf="nextProject | async as next">
+      <button
+        (click)="navigateToProject(next)"
+        class="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-red-400 bg-transparent border border-red-400 rounded hover:bg-red-400 hover:text-white hover:border-transparent"
+      >
+        <p style="margin: 0px !important">Next Project</p>
+        <mat-icon class="">subdirectory_arrow_right</mat-icon>
+      </button>
+    </ng-container>
+  </div>
+  <div class="grid grid-cols-1 gap-10">
+    <div
+      *ngFor="let data of testData.dataList"
+      class="grid grid-cols-1 gap-10 bg-white border rounded-lg px-7 py-9 bg-opacity-60 lg:grid-cols-2"
+    >
+      <div
+        class="grid grid-cols-1 gap-7 lg:{{
+          data.imageList.length > 1 ? 'grid-cols-2' : 'grid-cols-1'
+        }} lg:auto-rows-min "
+      >
+        <div *ngFor="let imageData of data.imageList" class="flex flex-col gap-3">
+          <!-- <img *ngIf="imageData.detailPage" [src]="imageData.link" alt="" class="hover:cursor-pointer"
+              [routerLink]="['/recent-projects/project/',imageData.detailPageRootLink, imageData.detailPageLink]"> -->
+          <img
+            [src]="imageData.imagePathList[0].imagePath"
+            alt=""
+            class="hover:cursor-pointer"
+            (click)="openDialog(imageData.imagePathList)"
+          />
+
+          <div class="flex justify-between">
+            <p class="text-sm">{{ imageData.title }}</p>
+            <p class="text-sm font-thin">{{ imageData.tag }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-5">
+        <p class="text-xl font-semibold tracking-widest">{{ data.topicTitle }}</p>
+        <div class="flex flex-col gap-5 text-md">
+          <ng-container *ngIf="data.topicBulletPoints === true; else noBulletPoints">
+            <div *ngFor="let paragraphData of data.topicParagraphList" class="flex gap-2">
+              <div *ngIf="paragraphData.bullet" class="w-1.5 h-1.5 mt-1.5 bg-black rounded-full"></div>
+              <p class="w-10/12">
+                <span class="font-semibold">{{ paragraphData.highlight }}</span
+                >{{ paragraphData.paragraph }}
+              </p>
+            </div>
+          </ng-container>
+          <ng-template #noBulletPoints>
+            <p *ngFor="let paragraphData of data.topicParagraphList">{{ paragraphData.paragraph }}</p>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-between w-full my-10">
+    <ng-container *ngIf="previousProject | async as prev">
+      <button
+        (click)="navigateToProject(prev)"
+        class="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-red-400 bg-transparent border border-red-400 rounded hover:bg-red-400 hover:text-white hover:border-transparent"
+      >
+        <mat-icon class="">subdirectory_arrow_left</mat-icon>
+        <p style="margin: 0px !important">Previous Project</p>
+      </button>
+    </ng-container>
+
+    <ng-container *ngIf="nextProject | async as next">
+      <button
+        (click)="navigateToProject(next)"
+        class="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-red-400 bg-transparent border border-red-400 rounded hover:bg-red-400 hover:text-white hover:border-transparent"
+      >
+        <p style="margin: 0px !important">Next Project</p>
+        <mat-icon class="">subdirectory_arrow_right</mat-icon>
+      </button>
+    </ng-container>
+  </div>
+</ng-container>

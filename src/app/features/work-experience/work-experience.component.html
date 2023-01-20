@@ -1,0 +1,82 @@
+<div class="mb-14">
+  <p class="text-3xl font-medium tracking-widest uppercase">Work Experience</p>
+</div>
+
+<ng-container *ngFor="let workExperience of workExperienceList; let x = last">
+  <div class="flex gap-10">
+    <div class="flex flex-col items-center justify-center">
+      <div class="flex-none w-4 h-4 bg-red-400 rounded-full"></div>
+      <div class="w-0 h-full border border-red-400"></div>
+    </div>
+    <div class="flex flex-col gap-2">
+      <p class="text-sm text-gray-900 text-opacity-60">{{ workExperience.companyYearsOfService }}</p>
+      <p class="font-medium text-red-400 text-md lg:text-lg">
+        {{ workExperience.jobPoisiton }}
+        <span class="text-sm" *ngIf="workExperience.jobPoisiton2Flag">|</span> {{ workExperience.jobPoisiton2 }}
+      </p>
+      <div class="flex flex-col md:items-center md:flex-row md:gap-5">
+        <p class="lg:text-base">{{ workExperience.companyName }}</p>
+        <p class="text-sm md:italic">{{ workExperience.companyLocation }}</p>
+      </div>
+
+      <div *ngFor="let responsibility of workExperience.jobResponsibilities" class="flex gap-2">
+        <!-- <p>-</p> -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-arrow-badge-right"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M13 7h-6l4 5l-4 5h6l4 -5z"></path>
+        </svg>
+        <p class="text-sm md:text-base">
+          {{ responsibility.responsibility }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!x" class="flex gap-10">
+    <div class="flex items-center justify-center w-4">
+      <div class="w-0 h-full border border-red-400"></div>
+    </div>
+    <div class="w-10 h-14"></div>
+  </div>
+</ng-container>
+
+<!-- <ng-container *ngFor="let workExperience of workExperienceList; let x = last">
+  <div class="flex gap-10 lg:justify-center">
+    <div class="flex flex-col w-3/5 gap-2 lg:w-full md:items-end">
+      <p class="text-base font-medium tracking-widest uppercase md:text-base">{{ workExperience.companyName }}</p>
+      <p class="text-sm">{{ workExperience.companyLocation }}</p>
+      <p class="text-xs font-thin">{{ workExperience.companyYearsOfService }}</p>
+    </div>
+    <div class="w-0 border {{ x ? 'mt-0' : 'mt-1' }} border-red-400 relative">
+      <div class="absolute w-4 h-4 mx-auto bg-red-400 rounded-full"
+        style="top: 3%; right: 50%; transform: translate(50%, -50%)"></div>
+    </div>
+    <div class="flex flex-col w-full ">
+      <p class="tracking-widest text-md md:text-lg">{{ workExperience.jobPoisiton }}</p>
+      <div *ngFor="let responsibility of workExperience.jobResponsibilities" class="flex gap-2">
+        <p>-</p>
+        <p class="text-sm text-gray-800 md:text-base text-opacity-60">
+          {{ responsibility.responsibility }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="workExperience.emptyLine === true" class="flex gap-10 lg:justify-center ">
+    <div class="w-3/5 h-10 lg:w-full "></div>
+    <div class="relative w-0 border border-red-400">
+      <div class="absolute w-4 h-4 mx-auto rounded-full" style="top: 50%; right: 50%; transform: translate(50%, -50%)">
+      </div>
+    </div>
+    <div class="w-full h-10 "></div>
+  </div>
+</ng-container> -->
