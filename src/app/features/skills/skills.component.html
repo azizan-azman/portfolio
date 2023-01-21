@@ -11,12 +11,12 @@
     >
       <div
         *ngFor="let skill of skillGroup.skillGroupList"
-        class="flex flex-col justify-between gap-10 px-5 py-6 rounded-lg shadow-lg bg-gray-100 bg-opacity-50"
+        class="flex flex-col justify-between gap-10 px-5 py-6 bg-gray-100 bg-opacity-50 rounded-lg shadow-lg"
       >
-        <img [src]="skill.skillLogoPath" class="h-40 md:h-12 w-fit" alt="" />
-        <div class="flex items-center justify-between">
-          <p class="text-xl font-medium" style="margin: 0 !important">{{ skill.skillTitle }}</p>
-          <p class="font-thin" style="margin: 0 !important">{{ skill.skillYearOfExperience }}</p>
+        <img [src]="skill.skillLogoPath" class="h-40 mx-auto md:h-12 w-fit" alt="" />
+        <div class="flex flex-col items-center gap-2">
+          <p class="text-lg font-medium" style="margin: 0 !important">{{ skill.skillTitle }}</p>
+          <p class="text-sm font-thin" style="margin: 0 !important">{{ skill.skillYearOfExperience }}</p>
         </div>
       </div>
     </div>

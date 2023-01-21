@@ -45,6 +45,7 @@
               [routerLink]="['/recent-projects/project/',imageData.detailPageRootLink, imageData.detailPageLink]"> -->
           <img
             [src]="imageData.imagePathList[0].imagePath"
+            priority="high"
             alt=""
             class="hover:cursor-pointer"
             (click)="openDialog(imageData.imagePathList)"
