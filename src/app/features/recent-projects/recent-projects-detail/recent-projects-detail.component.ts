@@ -52,33 +52,33 @@ export class RecentProjectsDetailComponent implements OnInit {
             {
               imagePathList: [
                 {
-                  imagePath: './output/images/recent-projects/project-001/tcs/project-001-introduction-tcs-list.png',
+                  imagePath: '.output/images/recent-projects/project-001/tcs/project-001-introduction-tcs-list.png',
                   imageTitle: 'TCS Agent Dashboard - Data Table with pagination.',
                 },
                 {
-                  imagePath: './output/images/recent-projects/project-001/tcs/project-001-introduction-tcs-delete.png',
+                  imagePath: '.output/images/recent-projects/project-001/tcs/project-001-introduction-tcs-delete.png',
                   imageTitle: 'TCS Agent Dashboard - Delete item dialog.',
                 },
                 {
-                  imagePath: './output/images/recent-projects/project-001/tcs/project-001-introduction-tcs-create.png',
+                  imagePath: '.output/images/recent-projects/project-001/tcs/project-001-introduction-tcs-create.png',
                   imageTitle: 'TCS Agent Dashboard - Create item form.',
                 },
                 {
-                  imagePath: './output/images/recent-projects/project-001/tcs/project-001-introduction-tcs-edit.png',
+                  imagePath: '.output/images/recent-projects/project-001/tcs/project-001-introduction-tcs-edit.png',
                   imageTitle: 'TCS Agent Dashboard - Edit item form.',
                 },
                 {
-                  imagePath: './output/images/recent-projects/project-001/tcs/project-001-introduction-tcs-list-sm.png',
+                  imagePath: '.output/images/recent-projects/project-001/tcs/project-001-introduction-tcs-list-sm.png',
                   imageTitle: 'TCS Agent Dashboard (Mobile screen) -  Data Table with pagination.',
                 },
 
                 {
                   imagePath:
-                    './output/images/recent-projects/project-001/tcs/project-001-introduction-tcs-create-sm.png',
+                    '.output/images/recent-projects/project-001/tcs/project-001-introduction-tcs-create-sm.png',
                   imageTitle: 'TCS Agent Dashboard (Mobile screen) -  Create item form.',
                 },
                 {
-                  imagePath: './output/images/recent-projects/project-001/tcs/project-001-introduction-tcs-edit-sm.png',
+                  imagePath: '.output/images/recent-projects/project-001/tcs/project-001-introduction-tcs-edit-sm.png',
                   imageTitle: 'TCS Agent Dashboard (Mobile screen) -  Edit item form.',
                 },
               ],
@@ -91,27 +91,27 @@ export class RecentProjectsDetailComponent implements OnInit {
             {
               imagePathList: [
                 {
-                  imagePath: './output/images/recent-projects/project-001/tcss/project-001-introduction-tcss-list.png',
+                  imagePath: '.output/images/recent-projects/project-001/tcss/project-001-introduction-tcss-list.png',
                   imageTitle: 'TCSS Agent Dashboard -  Data Table with pagination.',
                 },
 
                 {
-                  imagePath: './output/images/recent-projects/project-001/tcss/project-001-introduction-tcss-edit.png',
+                  imagePath: '.output/images/recent-projects/project-001/tcss/project-001-introduction-tcss-edit.png',
                   imageTitle: 'TCSS Agent Dashboard -  Edit item form.',
                 },
                 {
                   imagePath:
-                    './output/images/recent-projects/project-001/tcss/project-001-introduction-tcss-list-sm.png',
+                    '.output/images/recent-projects/project-001/tcss/project-001-introduction-tcss-list-sm.png',
                   imageTitle: 'TCSS Agent Dashboard (Mobile screen) -  Data Table with pagination.',
                 },
                 {
                   imagePath:
-                    './output/images/recent-projects/project-001/tcss/project-001-introduction-tcss-create-sm.png',
+                    '.output/images/recent-projects/project-001/tcss/project-001-introduction-tcss-create-sm.png',
                   imageTitle: 'TCSS Agent Dashboard (Mobile screen) -  Create item form.',
                 },
                 {
                   imagePath:
-                    './output/images/recent-projects/project-001/tcss/project-001-introduction-tcss-edit-sm.png',
+                    '.output/images/recent-projects/project-001/tcss/project-001-introduction-tcss-edit-sm.png',
                   imageTitle: 'TCSS Agent Dashboard (Mobile screen) -  Edit item form.',
                 },
               ],
@@ -125,7 +125,7 @@ export class RecentProjectsDetailComponent implements OnInit {
               imagePathList: [
                 {
                   imagePath:
-                    './output/images/recent-projects/project-001/wallboard/project-001-introduction-wallboard-1.png',
+                    '.output/images/recent-projects/project-001/wallboard/project-001-introduction-wallboard-1.png',
                   imageTitle: 'Vehicle Detection & Toll Collection Wallboard.',
                 },
               ],
@@ -139,7 +139,7 @@ export class RecentProjectsDetailComponent implements OnInit {
               imagePathList: [
                 {
                   imagePath:
-                    './output/images/recent-projects/project-001/homescreen/project-001-introduction-homescreen.png',
+                    '.output/images/recent-projects/project-001/homescreen/project-001-introduction-homescreen.png',
                   imageTitle: 'Agent Homescreen -  Availabe Application access.',
                 },
               ],
@@ -178,8 +178,7 @@ export class RecentProjectsDetailComponent implements OnInit {
             {
               imagePathList: [
                 {
-                  imagePath:
-                    './output/images/recent-projects/project-001/framework-used/project-001-framework-used.png',
+                  imagePath: '.output/images/recent-projects/project-001/framework-used/project-001-framework-used.png',
                   imageTitle: 'Nx + Angular + Tailwindcss.',
                 },
               ],
@@ -219,7 +218,7 @@ export class RecentProjectsDetailComponent implements OnInit {
               imagePathList: [
                 {
                   imagePath:
-                    './output/images/recent-projects/project-001/strategy/project-001-strategy-shared-breadcrumbs.png',
+                    '.output/images/recent-projects/project-001/strategy/project-001-strategy-shared-breadcrumbs.png',
                   imageTitle:
                     'Using the DRY principle to create a breadcrumbs component that is shared across multiple apps inside the monorepo.',
                 },
@@ -234,7 +233,7 @@ export class RecentProjectsDetailComponent implements OnInit {
               imagePathList: [
                 {
                   imagePath:
-                    './output/images/recent-projects/project-001/strategy/project-001-strategy-tailwindcss-breakpoints.png',
+                    '.output/images/recent-projects/project-001/strategy/project-001-strategy-tailwindcss-breakpoints.png',
                   imageTitle: 'Responsive design using Mobile-first approach and Tailwindcss breakpoints.',
                 },
               ],
@@ -248,7 +247,7 @@ export class RecentProjectsDetailComponent implements OnInit {
               imagePathList: [
                 {
                   imagePath:
-                    './output/images/recent-projects/project-001/strategy/project-001-strategy-typescript-error.png',
+                    '.output/images/recent-projects/project-001/strategy/project-001-strategy-typescript-error.png',
                   imageTitle: 'Error handling using Typescript.',
                 },
               ],
@@ -262,7 +261,7 @@ export class RecentProjectsDetailComponent implements OnInit {
               imagePathList: [
                 {
                   imagePath:
-                    './output/images/recent-projects/project-001/strategy/project-001-strategy-lazy-loading.png',
+                    '.output/images/recent-projects/project-001/strategy/project-001-strategy-lazy-loading.png',
                   imageTitle: 'Loading components using lazy-loading strategy.',
                 },
               ],
@@ -325,7 +324,7 @@ export class RecentProjectsDetailComponent implements OnInit {
               imagePathList: [
                 {
                   imagePath:
-                    './output/images/recent-projects/project-001/role/project-001-role-balsamic-wireframe-2.png',
+                    '.output/images/recent-projects/project-001/role/project-001-role-balsamic-wireframe-2.png',
                   imageTitle: 'Balsamic Wireframe for UI/UX design.',
                 },
               ],
@@ -338,7 +337,7 @@ export class RecentProjectsDetailComponent implements OnInit {
             {
               imagePathList: [
                 {
-                  imagePath: './output/images/recent-projects/project-001/role/project-001-role-documentation.png',
+                  imagePath: '.output/images/recent-projects/project-001/role/project-001-role-documentation.png',
                   imageTitle: 'Documentations for code writing & UI/UX standardization.',
                 },
               ],
@@ -416,27 +415,27 @@ export class RecentProjectsDetailComponent implements OnInit {
               imagePathList: [
                 {
                   imagePath:
-                    './output/images/recent-projects/project-002/introduction/project-002-introduction-ewallet-1.png',
+                    '.output/images/recent-projects/project-002/introduction/project-002-introduction-ewallet-1.png',
                   imageTitle: 'User eWallet - Home screen.',
                 },
                 {
                   imagePath:
-                    './output/images/recent-projects/project-002/introduction/project-002-introduction-ewallet-2.png',
+                    '.output/images/recent-projects/project-002/introduction/project-002-introduction-ewallet-2.png',
                   imageTitle: 'User eWallet - Settings.',
                 },
                 {
                   imagePath:
-                    './output/images/recent-projects/project-002/introduction/project-002-introduction-ewallet-3.png',
+                    '.output/images/recent-projects/project-002/introduction/project-002-introduction-ewallet-3.png',
                   imageTitle: 'User eWallet - User Profile settings.',
                 },
                 {
                   imagePath:
-                    './output/images/recent-projects/project-002/introduction/project-002-introduction-ewallet-4.png',
+                    '.output/images/recent-projects/project-002/introduction/project-002-introduction-ewallet-4.png',
                   imageTitle: "User eWallet - List of User's registered vehicle.",
                 },
                 {
                   imagePath:
-                    './output/images/recent-projects/project-002/introduction/project-002-introduction-ewallet-5.png',
+                    '.output/images/recent-projects/project-002/introduction/project-002-introduction-ewallet-5.png',
                   imageTitle: 'User eWallet - Outstanding Payment.',
                 },
               ],
@@ -469,8 +468,7 @@ export class RecentProjectsDetailComponent implements OnInit {
             {
               imagePathList: [
                 {
-                  imagePath:
-                    './output/images/recent-projects/project-002/framework-used/project-002-framework-used.png',
+                  imagePath: '.output/images/recent-projects/project-002/framework-used/project-002-framework-used.png',
                   imageTitle: 'Ionic + Angular + Tailwindcss.',
                 },
               ],
@@ -520,7 +518,7 @@ export class RecentProjectsDetailComponent implements OnInit {
               imagePathList: [
                 {
                   imagePath:
-                    './output/images/recent-projects/project-001/strategy/project-001-strategy-shared-breadcrumbs.png',
+                    '.output/images/recent-projects/project-001/strategy/project-001-strategy-shared-breadcrumbs.png',
                   imageTitle:
                     'Using the DRY principle to create a breadcrumbs component that is shared across multiple apps inside the monorepo.',
                 },
@@ -535,7 +533,7 @@ export class RecentProjectsDetailComponent implements OnInit {
               imagePathList: [
                 {
                   imagePath:
-                    './output/images/recent-projects/project-001/strategy/project-001-strategy-tailwindcss-breakpoints.png',
+                    '.output/images/recent-projects/project-001/strategy/project-001-strategy-tailwindcss-breakpoints.png',
                   imageTitle: 'Responsive design using Mobile-first approach and Tailwindcss breakpoints.',
                 },
               ],
@@ -549,7 +547,7 @@ export class RecentProjectsDetailComponent implements OnInit {
               imagePathList: [
                 {
                   imagePath:
-                    './output/images/recent-projects/project-001/strategy/project-001-strategy-typescript-error.png',
+                    '.output/images/recent-projects/project-001/strategy/project-001-strategy-typescript-error.png',
                   imageTitle: 'Error handling using Typescript.',
                 },
               ],
@@ -563,7 +561,7 @@ export class RecentProjectsDetailComponent implements OnInit {
               imagePathList: [
                 {
                   imagePath:
-                    './output/images/recent-projects/project-001/strategy/project-001-strategy-lazy-loading.png',
+                    '.output/images/recent-projects/project-001/strategy/project-001-strategy-lazy-loading.png',
                   imageTitle: 'Loading components using lazy-loading strategy.',
                 },
               ],
@@ -616,7 +614,7 @@ export class RecentProjectsDetailComponent implements OnInit {
             {
               imagePathList: [
                 {
-                  imagePath: './output/images/recent-projects/project-002/role/project-002-role-figma-1.png',
+                  imagePath: '.output/images/recent-projects/project-002/role/project-002-role-figma-1.png',
                   imageTitle: 'Designing the UI/UX of the app and adding prototype flow using figma.',
                 },
               ],
@@ -629,7 +627,7 @@ export class RecentProjectsDetailComponent implements OnInit {
             {
               imagePathList: [
                 {
-                  imagePath: './output/images/recent-projects/project-002/role/project-002-role-figma-2.png',
+                  imagePath: '.output/images/recent-projects/project-002/role/project-002-role-figma-2.png',
                   imageTitle: 'Atomic Design System - Colors.',
                 },
               ],
@@ -642,7 +640,7 @@ export class RecentProjectsDetailComponent implements OnInit {
             {
               imagePathList: [
                 {
-                  imagePath: './output/images/recent-projects/project-002/role/project-002-role-figma-3.png',
+                  imagePath: '.output/images/recent-projects/project-002/role/project-002-role-figma-3.png',
                   imageTitle: 'Atomic Design System - Typography.',
                 },
               ],
@@ -704,17 +702,17 @@ export class RecentProjectsDetailComponent implements OnInit {
               imagePathList: [
                 {
                   imagePath:
-                    './output/images/recent-projects/project-003/introduction/project-003-introduction-home.png',
+                    '.output/images/recent-projects/project-003/introduction/project-003-introduction-home.png',
                   imageTitle: 'User Vehicle Towing - Homescreen.',
                 },
                 {
                   imagePath:
-                    './output/images/recent-projects/project-003/introduction/project-003-introduction-register-vehicle.png',
+                    '.output/images/recent-projects/project-003/introduction/project-003-introduction-register-vehicle.png',
                   imageTitle: 'User Vehicle Towing - Vehicle registration form.',
                 },
                 {
                   imagePath:
-                    './output/images/recent-projects/project-003/introduction/project-003-introduction-call-HQ.png',
+                    '.output/images/recent-projects/project-003/introduction/project-003-introduction-call-HQ.png',
                   imageTitle: 'User Vehicle Towing - Emergency call feature.',
                 },
               ],
@@ -753,8 +751,7 @@ export class RecentProjectsDetailComponent implements OnInit {
             {
               imagePathList: [
                 {
-                  imagePath:
-                    './output/images/recent-projects/project-003/framework-used/project-003-framework-used.png',
+                  imagePath: '.output/images/recent-projects/project-003/framework-used/project-003-framework-used.png',
                   imageTitle: 'Ionic + Angular + Cordova. ',
                 },
               ],
@@ -801,7 +798,7 @@ export class RecentProjectsDetailComponent implements OnInit {
               imagePathList: [
                 {
                   imagePath:
-                    './output/images/recent-projects/project-001/strategy/project-001-strategy-lazy-loading.png',
+                    '.output/images/recent-projects/project-001/strategy/project-001-strategy-lazy-loading.png',
                   imageTitle: 'Loading components using lazy-loading strategy.',
                 },
               ],
@@ -843,7 +840,7 @@ export class RecentProjectsDetailComponent implements OnInit {
             {
               imagePathList: [
                 {
-                  imagePath: './output/images/recent-projects/project-003/role/project-003-role-update-profile.png',
+                  imagePath: '.output/images/recent-projects/project-003/role/project-003-role-update-profile.png',
                   imageTitle: 'Developed a user profile form as one of my tasks.',
                 },
               ],

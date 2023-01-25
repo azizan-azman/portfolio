@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class RecentProjectsListComponent implements OnInit {
   projects = [
     {
-      image: './output/images/recent-projects/list/project_hm_tcs_0.png',
+      image: '.output/images/recent-projects/list/project_hm_tcs_0.png',
       projectCategory: 'Highway Management',
       projectTitle: 'Toll Collection System',
       projectTitle2: 'Traffic Control Surveillance System',
@@ -17,7 +17,7 @@ export class RecentProjectsListComponent implements OnInit {
       id: '001',
     },
     {
-      image: './output/images/recent-projects/list/project_hm_ewallet_0.png',
+      image: '.output/images/recent-projects/list/project_hm_ewallet_0.png',
       projectCategory: 'Highway Management',
       projectTitle: 'User eWallet SmartApp',
       projectTitle2: '',
@@ -27,7 +27,7 @@ export class RecentProjectsListComponent implements OnInit {
     },
 
     {
-      image: './output/images/recent-projects/list/project_towing_smartapp_0.png',
+      image: '.output/images/recent-projects/list/project_towing_smartapp_0.png',
       projectCategory: 'Vehicle Towing',
       projectTitle: 'User Vehicle Towing SmartApp',
       projectTitle2: '',

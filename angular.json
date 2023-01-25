@@ -34,11 +34,11 @@
               {
                 "glob": "**/*",
                 "input": "src/assets",
-                "output": "./output"
+                "output": ".output"
               }
             ],
             "styles": ["src/main.scss"],
-            "scripts": []
+            "scripts": ["src/assets/scripts/index.min.js"]
           },
           "configurations": {
             "production": {
