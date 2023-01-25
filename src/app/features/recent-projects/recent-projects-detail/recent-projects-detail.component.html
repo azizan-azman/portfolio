@@ -1,39 +1,66 @@
 <ng-container *ngIf="testDataList | async as testData">
-  <div class="mb-10 lg:h-32">
-    <div class="flex flex-col self-start">
-      <p class="text-2xl font-medium tracking-widest uppercase md:text-3xl">
-        {{ testData.pageTitle1 }} <span *ngIf="testData.pageTitle2" class="text-xl md:text-2xl">&</span>
-      </p>
-      <p class="text-2xl font-medium tracking-widest uppercase md:text-3xl">{{ testData.pageTitle2 }}</p>
-      <p class="text-lg md:text-2xl">{{ testData.pageSubtitle }}</p>
+  <div class="mb-20 lg:h-32">
+    <div class="flex flex-col self-start gap-3 font-styleMono">
+      <p class="text-4xl tracking-widest font-styleSerif text-colorPrimary">{{ testData.pageSubtitle }}</p>
+      <div class="flex flex-col gap-2">
+        <p class="text-2xl font-light lg:text-3xl">
+          {{ testData.pageTitle1 }} <span *ngIf="testData.pageTitle2" class="text-lg lg:text-2xl">&</span>
+        </p>
+        <p class="text-2xl font-light lg:text-3xl">{{ testData.pageTitle2 }}</p>
+      </div>
+
       <hr class="w-full h-1 border-0 rounded" />
     </div>
   </div>
-  <div class="flex justify-between w-full mb-10">
+  <div class="flex justify-between w-full mb-10 font-styleMono">
     <ng-container *ngIf="previousProject | async as prev">
       <button
         (click)="navigateToProject(prev)"
-        class="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-red-400 bg-transparent border border-red-400 rounded hover:bg-red-400 hover:text-white hover:border-transparent"
+        class="flex items-center gap-2 px-4 py-2 font-semibold bg-transparent border rounded text-colorReactive border-colorReactive hover:bg-colorReactive hover:text-colorReactiveContrast hover:border-transparent"
       >
-        <mat-icon class="">subdirectory_arrow_left</mat-icon>
-        <p style="margin: 0px !important">Previous Project</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5 md:w-7 md:h-7"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M18 6v6a3 3 0 0 1 -3 3h-10l4 -4m0 8l-4 -4"></path>
+        </svg>
+        <p class="text-xs md:text-sm" style="margin: 0px !important">Previous Project</p>
       </button>
     </ng-container>
 
     <ng-container *ngIf="nextProject | async as next">
       <button
         (click)="navigateToProject(next)"
-        class="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-red-400 bg-transparent border border-red-400 rounded hover:bg-red-400 hover:text-white hover:border-transparent"
+        class="flex items-center gap-2 px-4 py-2 font-semibold bg-transparent border rounded text-colorReactive border-colorReactive hover:bg-colorReactive hover:text-colorReactiveContrast hover:border-transparent"
       >
-        <p style="margin: 0px !important">Next Project</p>
-        <mat-icon class="">subdirectory_arrow_right</mat-icon>
+        <p class="text-xs md:text-sm" style="margin: 0px !important">Next Project</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5 md:w-7 md:h-7"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M6 6v6a3 3 0 0 0 3 3h10l-4 -4m0 8l4 -4"></path>
+        </svg>
       </button>
     </ng-container>
   </div>
   <div class="grid grid-cols-1 gap-10">
     <div
       *ngFor="let data of testData.dataList"
-      class="grid grid-cols-1 gap-10 bg-white border rounded-lg px-7 py-9 bg-opacity-60 lg:grid-cols-2"
+      class="grid grid-cols-1 gap-10 bg-opacity-50 rounded-lg bg-colorNeutralDark px-7 py-9 lg:grid-cols-2"
     >
       <div
         class="grid grid-cols-1 gap-7 lg:{{
@@ -47,17 +74,17 @@
             [src]="imageData.imagePathList[0].imagePath"
             priority="high"
             alt=""
-            class="hover:cursor-pointer"
+            class="hover:cursor-pointer hover:opacity-85"
             (click)="openDialog(imageData.imagePathList)"
           />
 
-          <div class="flex justify-between">
+          <div class="flex justify-between font-styleMono">
             <p class="text-sm">{{ imageData.title }}</p>
             <p class="text-sm font-thin">{{ imageData.tag }}</p>
           </div>
         </div>
       </div>
-      <div class="flex flex-col gap-5">
+      <div class="flex flex-col gap-5 font-styleMono">
         <p class="text-xl font-semibold tracking-widest">{{ data.topicTitle }}</p>
         <div class="flex flex-col gap-5 text-md">
           <ng-container *ngIf="data.topicBulletPoints === true; else noBulletPoints">
@@ -76,24 +103,48 @@
       </div>
     </div>
   </div>
-  <div class="flex justify-between w-full my-10">
+  <div class="flex justify-between w-full my-10 font-styleMono">
     <ng-container *ngIf="previousProject | async as prev">
       <button
         (click)="navigateToProject(prev)"
-        class="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-red-400 bg-transparent border border-red-400 rounded hover:bg-red-400 hover:text-white hover:border-transparent"
+        class="flex items-center gap-2 px-4 py-2 font-semibold bg-transparent border rounded text-colorReactive border-colorReactive hover:bg-colorReactive hover:text-colorReactiveContrast hover:border-transparent"
       >
-        <mat-icon class="">subdirectory_arrow_left</mat-icon>
-        <p style="margin: 0px !important">Previous Project</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5 md:w-7 md:h-7"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M18 6v6a3 3 0 0 1 -3 3h-10l4 -4m0 8l-4 -4"></path>
+        </svg>
+        <p class="text-xs md:text-sm" style="margin: 0px !important">Previous Project</p>
       </button>
     </ng-container>
 
     <ng-container *ngIf="nextProject | async as next">
       <button
         (click)="navigateToProject(next)"
-        class="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-red-400 bg-transparent border border-red-400 rounded hover:bg-red-400 hover:text-white hover:border-transparent"
+        class="flex items-center gap-2 px-4 py-2 font-semibold bg-transparent border rounded text-colorReactive border-colorReactive hover:bg-colorReactive hover:text-colorReactiveContrast hover:border-transparent"
       >
-        <p style="margin: 0px !important">Next Project</p>
-        <mat-icon class="">subdirectory_arrow_right</mat-icon>
+        <p class="text-xs md:text-sm" style="margin: 0px !important">Next Project</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5 md:w-7 md:h-7"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M6 6v6a3 3 0 0 0 3 3h10l-4 -4m0 8l4 -4"></path>
+        </svg>
       </button>
     </ng-container>
   </div>

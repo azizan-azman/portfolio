@@ -10,11 +10,12 @@
 }
 .mat-sidenav-content {
   background-color: #f8fafc !important;
+  // background-color: #faf2f0 !important;
 }
 
 .link-underline {
   border-bottom-width: 0;
-  background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#f8fafc, #f8fafc);
   background-size: 0 1.5px;
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -22,19 +23,27 @@
 }
 
 .link-underline-black {
-  background-image: linear-gradient(transparent, transparent), linear-gradient(#f87171, #f87171);
+  // background-image: linear-gradient(transparent, transparent), linear-gradient(#f87171, #f87171);
+  // background-image: linear-gradient(transparent, transparent), linear-gradient(#ab5232, #ab5232);
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#f8fafc, #f8fafc);
 }
 
 .link-underline:hover {
-  color: #f87171;
+  // color: #f87171;
+  // color: #ab5232;
+  color: #f8fafc;
   background-size: 100% 1.5px;
   background-position: 0 100%;
 }
 
 .link-underline-active {
-  color: #f87171;
+  // color: #f87171;
+  // color: #ab5232;
+  color: #f8fafc;
   border-bottom-width: 0;
   background-size: 100% 1.5px;
   background-position: 0 100%;
-  background-image: linear-gradient(transparent, transparent), linear-gradient(#f87171, #f87171);
+  // background-image: linear-gradient(transparent, transparent), linear-gradient(#f87171, #f87171);
+  // background-image: linear-gradient(transparent, transparent), linear-gradient(#ab5232, #ab5232);
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#f8fafc, #f8fafc);
 }

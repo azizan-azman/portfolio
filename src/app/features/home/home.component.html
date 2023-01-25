@@ -1,36 +1,117 @@
-<div class="absolute top-0 right-0 w-full bg-gray-900 lg:h-full -z-10">
+<div class="absolute top-0 right-0 w-full bg-colorPrimary lg:h-full -z-10 font-styleMono">
   <div class="flex flex-col justify-between h-full px-10 pt-32 md:pt-26 lg:pt-40">
     <div class="flex flex-col gap-5">
-      <div class="flex items-center gap-1">
-        <p class="text-xl text-white font-regular md:text-3xl lg:text-4xl lg:w-200">Hi, I'm Azizan</p>
-        <mat-icon class="text-red-400">remove</mat-icon>
-        <p class="text-xl text-white font-regular md:text-3xl lg:text-4xl lg:w-200">Front-end Developer</p>
+      <div class="flex items-center gap-3">
+        <p class="text-lg font-medium text-white md:text-3xl">Hi, I'm Azizan</p>
+        <div class="w-2 h-0 border lg:border-2 border-colorReactiveDark lg:w-4"></div>
+        <p class="text-lg font-medium text-white md:text-3xl">Front-end Developer</p>
       </div>
 
-      <p class="text-sm text-gray-300 sm:text-base lg:text-lg lg:w-80">
-        Software Engineer with 4+ years of experience in Front-end Development using frameworks such as Angular, Ionic,
-        and Flutter.
+      <p class="text-colorPrimaryContrast lg:w-80">
+        Software Engineer with 4+ years of experience in Front-end Development using frameworks such as Angular,
+        Tailwindcss, and Flutter.
       </p>
-      <p class="text-sm text-gray-300 sm:text-base lg:text-lg lg:w-80">
+      <p class="text-colorPrimaryContrast lg:w-80">
         A team player and an avid learner. Passionate in solving problems, and constantly seeking knowledge and taking
         up challenges to improve my engineering skills.
       </p>
-      <!-- <p class="text-sm text-white text-opacity-60 sm:text-md lg:text-lg lg:w-72">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-          itaque
-          recusandae eius consequuntur doloremque magnam voluptates! Tempora optio explicabo deserunt ratione ea quos illo
-          sapiente.</p> -->
+
       <div class="flex items-center gap-5 mt-5">
-        <mat-icon class="text-red-400">mail</mat-icon>
-        <p class="text-sm font-thin tracking-widest text-white" style="margin: 0 !important">azizan.azman@gmail.com</p>
+        <div
+          (click)="copyToClipBoard(tooltip)"
+          [cdkCopyToClipboard]="'azizan.azman@gmail.com'"
+          class="px-1.5 py-1 bg-colorPrimaryContrast hover:cursor-pointer bg-opacity-0 hover:bg-opacity-40 hover:text-opacity-80 rounded-md text-colorReactiveDark"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="text-colorReactiveDark"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+            <polyline points="3 7 12 13 21 7"></polyline>
+          </svg>
+        </div>
+        <div class="flex items-center justify-center">
+          <p class="text-sm tracking-widest text-colorPrimaryContrast" style="margin: 0 !important">
+            azizan.azman@gmail.com
+          </p>
+          <div
+            class=""
+            #tooltip="matTooltip"
+            matTooltip="Copied to clipboard!"
+            matTooltipPosition="right"
+            matTooltipDisabled="true"
+          ></div>
+        </div>
+
+        <!-- <div class="px-2 py-1.5 rounded-md  bg-colorPrimaryContrast bg-opacity-20 text-colorPrimaryContrast ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" width="24" height="24" viewBox="0 0 24 24"
+            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2zm8 -2v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2">
+            </path>
+          </svg>
+        </div> -->
       </div>
       <div class="flex items-center gap-5">
-        <mat-icon class="text-red-400">call_outline</mat-icon>
-        <p class="text-sm font-thin tracking-widest text-white" style="margin: 0 !important">+601-116354474</p>
+        <div
+          (click)="copyToClipBoard(tooltip2)"
+          [cdkCopyToClipboard]="'+601-116354474'"
+          class="px-1.5 py-1 bg-colorPrimaryContrast hover:cursor-pointer bg-opacity-0 hover:bg-opacity-40 hover:text-opacity-80 rounded-md text-colorReactiveDark"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class=""
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
+            ></path>
+          </svg>
+        </div>
+
+        <div class="flex items-center justify-center">
+          <p class="text-sm tracking-widest text-colorPrimaryContrast" style="margin: 0 !important">+601-116354474</p>
+          <div
+            class=""
+            #tooltip2="matTooltip"
+            matTooltip="Copied to clipboard!"
+            matTooltipPosition="right"
+            matTooltipDisabled="true"
+          ></div>
+        </div>
+
+        <!-- <div class="px-2 py-1.5 rounded-md  bg-colorPrimaryContrast bg-opacity-20 text-colorPrimaryContrast">
+          <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+            stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2zm8 -2v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2">
+            </path>
+          </svg>
+        </div> -->
       </div>
     </div>
-    <div class="flex justify-center lg:absolute lg:bottom-0 lg:right-10">
+    <div class="flex justify-center lg:absolute lg:bottom-0 lg:right-20">
       <div class="w-[18rem] lg:w-[23rem]">
-        <img src="./output/images/home/home_picture.png" class="object-cover w-full h-full" />
+        <img src="./output/images/home/photo-large.png" class="object-cover w-full h-full" />
       </div>
     </div>
   </div>

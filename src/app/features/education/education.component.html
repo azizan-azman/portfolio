@@ -1,29 +1,30 @@
 <div class="mb-14">
-  <p class="text-3xl font-medium tracking-widest uppercase">Education</p>
+  <p class="text-4xl tracking-widest font-styleSerif text-colorPrimary">Education</p>
 </div>
 
 <ng-container *ngFor="let educationHistory of educationHistoryList; let x = last">
-  <div class="flex gap-10">
+  <div class="flex gap-7" [ngClass]="{ 'mb-10': x }">
     <div class="flex flex-col items-center justify-center">
-      <div class="flex-none w-4 h-4 border-4 border-red-400 rounded-full"></div>
-      <div class="w-0 h-full border border-red-400"></div>
+      <div class="flex-none w-4 h-4 border-4 rounded-full border-colorReactive"></div>
+      <div class="w-0 h-full border border-colorReactive"></div>
     </div>
-    <div class="flex flex-col gap-1">
-      <p class="text-sm text-gray-900 text-opacity-60">{{ educationHistory.institutionDuration }}</p>
-      <p class="font-semibold text-md lg:text-lg">
-        {{ educationHistory.institutionCertificate }}
-      </p>
-      <div class="flex flex-col md:items-center md:flex-row md:gap-5">
-        <p class="lg:text-lg">{{ educationHistory.institutionName }}</p>
-        <p class="text-sm md:italic">{{ educationHistory.institutionLocation }}</p>
+    <div class="flex flex-col w-full gap-2 font-styleMono">
+      <p class="text-sm text-colorSubRegularDark">{{ educationHistory.institutionDuration }}</p>
+      <div class="flex flex-col w-full gap-3 px-5 py-5 bg-opacity-50 rounded-md bg-colorNeutralDark lg:w-9/12">
+        <p class="font-medium text-colorPrimary">{{ educationHistory.institutionResult }}</p>
+        <p class="font-medium text-colorTitleDark lg:text-lg">
+          {{ educationHistory.institutionCertificate }}
+        </p>
+        <div class="flex flex-col gap-2 md:items-center md:flex-row md:gap-5">
+          <p class="text-colorRegularDark">{{ educationHistory.institutionName }}</p>
+          <p class="text-sm italic text-colorRegularDark">{{ educationHistory.institutionLocation }}</p>
+        </div>
       </div>
-
-      <p class="">{{ educationHistory.institutionResult }}</p>
     </div>
   </div>
   <div *ngIf="!x" class="flex gap-10">
     <div class="flex items-center justify-center w-4">
-      <div class="w-0 h-full border border-red-400"></div>
+      <div class="w-0 h-full border border-colorReactive"></div>
     </div>
     <div class="w-10 h-14"></div>
   </div>

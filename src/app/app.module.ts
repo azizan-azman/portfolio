@@ -14,7 +14,6 @@ import { RouteReusableStrategy, ApiPrefixInterceptor, ErrorHandlerInterceptor, S
 import { ShellModule } from './shell/shell.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HomeModule } from './features/home/home.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -29,7 +28,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MaterialModule,
     SharedModule,
     ShellModule,
-    HomeModule,
     NgbModule,
     AppRoutingModule, // must be imported as the last module as it contains the fallback route
   ],

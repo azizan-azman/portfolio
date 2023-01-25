@@ -43,8 +43,8 @@ export class RecentProjectsDetailComponent implements OnInit {
   getHighwayManagementTcsTcssData() {
     console.log('im in 1');
     this.testDataList.next({
-      pageTitle1: 'Toll Collection System (TCS)',
-      pageTitle2: 'Traffic Control Surveillance System (TCSS)',
+      pageTitle1: 'Toll Collection System',
+      pageTitle2: 'Traffic Control Surveillance System',
       pageSubtitle: 'Highway Management',
       dataList: [
         {
@@ -156,13 +156,13 @@ export class RecentProjectsDetailComponent implements OnInit {
             {
               highlight: '',
               paragraph:
-                'As a system tool, TCS manages and configures everything related to vehicle detection and toll fare collection on highways.',
+                'As a system tool, Toll Collection System (TCS) manages and configures everything related to vehicle detection and toll fare collection on highways.',
               bullet: false,
             },
             {
               highlight: '',
               paragraph:
-                'TCSS, on the other hand, is a system tool that handles the management and configuration of traffic control and surveillance on highways.',
+                'Traffic Control and Surveillance System (TCSS), on the other hand, is a system tool that handles the management and configuration of traffic control and surveillance on highways.',
               bullet: false,
             },
             {
@@ -895,7 +895,7 @@ export class RecentProjectsDetailComponent implements OnInit {
 
   navigateToProject(id: any) {
     this._router.navigate([`/recent-projects/project/${id}`]);
-    document.getElementsByTagName('mat-drawer-content')[0].scrollTo(0, 0);
+    // document.getElementsByTagName('mat-drawer-content')[0].scrollTo(0, 0);
   }
 
   openDialog(imageData: any) {

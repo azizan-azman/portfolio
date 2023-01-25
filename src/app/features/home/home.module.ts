@@ -7,6 +7,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from '@app/@shared';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '@app/material.module';
+import { ClipboardModule } from '@angular/cdk/clipboard';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -17,6 +18,7 @@ import { MaterialModule } from '@app/material.module';
     SharedModule,
     FlexLayoutModule,
     MaterialModule,
+    ClipboardModule,
   ],
 })
 export class HomeModule {}

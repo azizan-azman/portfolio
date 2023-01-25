@@ -6,7 +6,7 @@
   data-bs-ride="carousel"
 >
   <div
-    class="absolute left-0 right-0 flex justify-center px-5 mx-auto mb-4 bg-gray-800 rounded-md bottom-8 bg-opacity-40 w-fit carousel-indicators"
+    class="absolute left-0 right-0 flex justify-center px-5 mx-auto mb-4 bg-black rounded-md bottom-8 bg-opacity-40 w-fit carousel-indicators"
   >
     <ng-container *ngIf="dataList.imagePath.length > 1">
       <button
@@ -25,11 +25,7 @@
       [ngClass]="{ active: x }"
     >
       <img [src]="data.imagePath" class="block w-full rounded-lg" alt="..." />
-      <!-- <div class="absolute hidden mx-auto text-center carousel-caption md:block w-fit">
-
-        <p class="px-2 py-2 bg-gray-800 rounded-md bg-opacity-40 ">{{data.imageTitle}}</p>
-      </div> -->
-      <p class="py-2 mx-auto text-xs md:text-base">{{ data.imageTitle }}</p>
+      <p class="py-2 mx-auto text-xs md:text-base font-styleMono">{{ data.imageTitle }}</p>
     </div>
   </div>
   <ng-container *ngIf="dataList.imagePath.length > 1">

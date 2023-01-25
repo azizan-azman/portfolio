@@ -1,50 +1,58 @@
 <div class="mb-14">
-  <p class="text-3xl font-medium tracking-widest uppercase">Work Experience</p>
+  <p class="text-4xl tracking-widest font-styleSerif text-colorPrimary">Work Experience</p>
 </div>
 
 <ng-container *ngFor="let workExperience of workExperienceList; let x = last">
-  <div class="flex gap-10">
+  <div class="flex gap-10" [ngClass]="{ 'mb-10': x }">
     <div class="flex flex-col items-center justify-center">
-      <div class="flex-none w-4 h-4 bg-red-400 rounded-full"></div>
-      <div class="w-0 h-full border border-red-400"></div>
+      <div class="flex-none w-4 h-4 rounded-full bg-colorReactive"></div>
+      <div class="w-0 h-full border border-colorReactive"></div>
     </div>
-    <div class="flex flex-col gap-2">
-      <p class="text-sm text-gray-900 text-opacity-60">{{ workExperience.companyYearsOfService }}</p>
-      <p class="font-medium text-red-400 text-md lg:text-lg">
-        {{ workExperience.jobPoisiton }}
-        <span class="text-sm" *ngIf="workExperience.jobPoisiton2Flag">|</span> {{ workExperience.jobPoisiton2 }}
-      </p>
-      <div class="flex flex-col md:items-center md:flex-row md:gap-5">
-        <p class="lg:text-base">{{ workExperience.companyName }}</p>
-        <p class="text-sm md:italic">{{ workExperience.companyLocation }}</p>
+    <div class="flex flex-col w-full gap-5 font-styleMono">
+      <div class="flex flex-col gap-3">
+        <p class="text-sm font-light text-colorSubRegularDark">{{ workExperience.companyYearsOfService }}</p>
+        <div class="flex flex-col md:items-center md:flex-row md:gap-5">
+          <p class="text-colorSubRegularDark">{{ workExperience.companyName }}</p>
+          <p class="text-sm italic text-colorSubRegularDark">{{ workExperience.companyLocation }}</p>
+        </div>
       </div>
 
-      <div *ngFor="let responsibility of workExperience.jobResponsibilities" class="flex gap-3">
-        <!-- <p>-</p> -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="flex-none"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          stroke-width="2"
-          stroke="currentColor"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-          <path d="M13 7h-6l4 5l-4 5h6l4 -5z"></path>
-        </svg>
-        <p class="text-sm md:text-base">
-          {{ responsibility.responsibility }}
+      <div class="flex flex-col w-full gap-3 px-5 py-5 bg-opacity-50 rounded-md bg-colorNeutralDark lg:w-9/12">
+        <p class="text-lg font-medium text-colorPrimary">
+          {{ workExperience.jobPoisiton }}
+          <span class="text-sm" *ngIf="workExperience.jobPoisiton2Flag">|</span> {{ workExperience.jobPoisiton2 }}
         </p>
+
+        <div
+          *ngFor="let responsibility of workExperience.jobResponsibilities"
+          class="flex items-start gap-3 text-colorRegularDark"
+        >
+          <!-- <p>-</p> -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="flex-none w-5 h-5 mt-1"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M13 7h-6l4 5l-4 5h6l4 -5z"></path>
+          </svg>
+          <p class="font-light">
+            {{ responsibility.responsibility }}
+          </p>
+        </div>
       </div>
     </div>
   </div>
   <div *ngIf="!x" class="flex gap-10">
     <div class="flex items-center justify-center w-4">
-      <div class="w-0 h-full border border-red-400"></div>
+      <div class="w-0 h-full border border-colorReactive"></div>
     </div>
     <div class="w-10 h-14"></div>
   </div>
@@ -57,8 +65,8 @@
       <p class="text-sm">{{ workExperience.companyLocation }}</p>
       <p class="text-xs font-thin">{{ workExperience.companyYearsOfService }}</p>
     </div>
-    <div class="w-0 border {{ x ? 'mt-0' : 'mt-1' }} border-red-400 relative">
-      <div class="absolute w-4 h-4 mx-auto bg-red-400 rounded-full"
+    <div class="w-0 border {{ x ? 'mt-0' : 'mt-1' }} border-colorReactive relative">
+      <div class="absolute w-4 h-4 mx-auto rounded-full bg-colorReactive"
         style="top: 3%; right: 50%; transform: translate(50%, -50%)"></div>
     </div>
     <div class="flex flex-col w-full ">
@@ -73,7 +81,7 @@
   </div>
   <div *ngIf="workExperience.emptyLine === true" class="flex gap-10 lg:justify-center ">
     <div class="w-3/5 h-10 lg:w-full "></div>
-    <div class="relative w-0 border border-red-400">
+    <div class="relative w-0 border border-colorReactive">
       <div class="absolute w-4 h-4 mx-auto rounded-full" style="top: 50%; right: 50%; transform: translate(50%, -50%)">
       </div>
     </div>
