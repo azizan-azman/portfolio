@@ -17,7 +17,7 @@
         </div>
       </div>
 
-      <div class="flex flex-col w-full gap-3 px-5 py-5 bg-opacity-50 rounded-md bg-colorNeutralDark lg:w-9/12">
+      <div class="flex flex-col w-full gap-5 px-5 py-5 bg-opacity-50 rounded-md bg-colorNeutralDark lg:w-9/12">
         <p class="text-lg font-medium text-colorPrimary">
           {{ workExperience.jobPoisiton }}
           <span class="text-sm" *ngIf="workExperience.jobPoisiton2Flag">|</span> {{ workExperience.jobPoisiton2 }}
@@ -30,7 +30,7 @@
           <!-- <p>-</p> -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="flex-none w-5 h-5 mt-1"
+            class="flex-none text-colorRegularDark w-5 h-5 mt-1"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -43,7 +43,7 @@
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M13 7h-6l4 5l-4 5h6l4 -5z"></path>
           </svg>
-          <p class="font-light">
+          <p class="font-light leading-relaxed">
             {{ responsibility.responsibility }}
           </p>
         </div>

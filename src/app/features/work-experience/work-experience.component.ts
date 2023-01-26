@@ -37,7 +37,7 @@ export class WorkExperienceComponent implements OnInit {
         },
         {
           responsibility:
-            'Collaborated with the Backend Team to integrate RESTful APIs and design and develop components and pages with CRUD operations.',
+            'Collaborated with the Backend Team to integrate RESTful APIs and designed and developed components and pages with CRUD operations.',
         },
         {
           responsibility:
