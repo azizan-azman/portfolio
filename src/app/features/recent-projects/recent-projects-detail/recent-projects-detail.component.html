@@ -1,12 +1,12 @@
 <ng-container *ngIf="testDataList | async as testData">
   <div class="mb-20 lg:h-32">
     <div class="flex flex-col self-start gap-3 font-styleMono">
-      <p class="text-4xl tracking-widest font-styleSerif text-colorPrimary">{{ testData.pageSubtitle }}</p>
-      <div class="flex flex-col gap-2">
-        <p class="text-2xl font-light lg:text-3xl">
+      <p class="text-3xl tracking-widest font-styleSerif text-colorPrimary">{{ testData.pageSubtitle }}</p>
+      <div class="flex flex-col gap-2 text-colorTitleDark">
+        <p class="text-xl font-light lg:text-3xl">
           {{ testData.pageTitle1 }} <span *ngIf="testData.pageTitle2" class="text-lg lg:text-2xl">&</span>
         </p>
-        <p class="text-2xl font-light lg:text-3xl">{{ testData.pageTitle2 }}</p>
+        <p class="text-xl font-light lg:text-3xl">{{ testData.pageTitle2 }}</p>
       </div>
 
       <hr class="w-full h-1 border-0 rounded" />
@@ -65,7 +65,7 @@
   <div class="grid grid-cols-1 gap-10">
     <div
       *ngFor="let data of testData.dataList"
-      class="grid grid-cols-1 gap-10 bg-opacity-50 rounded-lg bg-colorNeutralDark px-7 py-9 lg:grid-cols-2"
+      class="grid grid-cols-1 gap-10 bg-opacity-50 rounded-lg bg-colorNeutralDark text-colorRegularDark px-7 py-9 lg:grid-cols-2"
     >
       <div
         class="grid grid-cols-1 gap-7 lg:{{
@@ -90,11 +90,11 @@
         </div>
       </div>
       <div class="flex flex-col gap-5 font-styleMono">
-        <p class="text-xl font-semibold tracking-widest">{{ data.topicTitle }}</p>
+        <p class="text-xl font-semibold tracking-widest text-colorTitleDark">{{ data.topicTitle }}</p>
         <div class="flex flex-col gap-5 text-md">
           <ng-container *ngIf="data.topicBulletPoints === true; else noBulletPoints">
             <div *ngFor="let paragraphData of data.topicParagraphList" class="flex gap-2">
-              <div *ngIf="paragraphData.bullet" class="w-1.5 h-1.5 mt-1.5 bg-black rounded-full"></div>
+              <div *ngIf="paragraphData.bullet" class="w-1.5 h-1.5 mt-2 bg-black rounded-full"></div>
               <p class="w-10/12">
                 <span class="font-semibold">{{ paragraphData.highlight }}</span
                 >{{ paragraphData.paragraph }}

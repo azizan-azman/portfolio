@@ -7,6 +7,8 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./dialog.component.scss'],
 })
 export class DialogComponent {
+  current = 1;
+
   constructor(
     public dialogRef: MatDialogRef<DialogComponent>,
     @Inject(MAT_DIALOG_DATA)
@@ -15,5 +17,20 @@ export class DialogComponent {
 
   onClose(): void {
     this.dialogRef.close();
+  }
+
+  onPrevious() {
+    if (this.current === 1) {
+      this.current = this.dataList.imagePath.length;
+    } else {
+      this.current = this.current - 1;
+    }
+  }
+  onNext() {
+    if (this.current === this.dataList.imagePath.length) {
+      this.current = 1;
+    } else {
+      this.current = this.current + 1;
+    }
   }
 }

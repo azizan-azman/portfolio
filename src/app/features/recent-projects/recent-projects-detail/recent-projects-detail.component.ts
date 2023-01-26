@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Subject, takeUntil } from 'rxjs';
 import { DialogComponent } from '../dialog/dialog.component';
 import { RecentProject } from '../recent-projects.model';
 
@@ -10,11 +10,14 @@ import { RecentProject } from '../recent-projects.model';
   templateUrl: './recent-projects-detail.component.html',
   styleUrls: ['./recent-projects-detail.component.scss'],
 })
-export class RecentProjectsDetailComponent implements OnInit {
+export class RecentProjectsDetailComponent implements OnInit, OnDestroy {
   testDataList: BehaviorSubject<RecentProject | null> = new BehaviorSubject<RecentProject | null>(null);
   activeRoute: string | null = this._activatedRoute.snapshot.paramMap.get('id');
   nextProject: BehaviorSubject<string | null> = new BehaviorSubject<string | null>(null);
   previousProject: BehaviorSubject<string | null> = new BehaviorSubject<string | null>(null);
+  screenWidth = window.innerWidth;
+
+  private _unsubscribeAll: Subject<void> = new Subject<void>();
 
   constructor(private _dialog: MatDialog, private _activatedRoute: ActivatedRoute, private _router: Router) {}
 
@@ -27,7 +30,7 @@ export class RecentProjectsDetailComponent implements OnInit {
       this.getVehicleTowingUserSmartappData();
     }
 
-    this._router.events.subscribe((event: any) => {
+    this._router.events.pipe(takeUntil(this._unsubscribeAll)).subscribe((event: any) => {
       if (event instanceof NavigationEnd) {
         if (event.url === '/recent-projects/project/001') {
           this.getHighwayManagementTcsTcssData();
@@ -38,6 +41,15 @@ export class RecentProjectsDetailComponent implements OnInit {
         }
       }
     });
+
+    window.onresize = () => {
+      this.screenWidth = window.innerWidth;
+    };
+  }
+
+  ngOnDestroy(): void {
+    this._unsubscribeAll.next();
+    this._unsubscribeAll.complete();
   }
 
   getHighwayManagementTcsTcssData() {
@@ -890,6 +902,7 @@ export class RecentProjectsDetailComponent implements OnInit {
   openDialog(imageData: any) {
     const dialogRef = this._dialog.open(DialogComponent, {
       data: { imagePath: imageData },
+      minWidth: this.screenWidth < 768 ? '100vw' : 'auto',
     });
   }
 }
