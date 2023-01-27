@@ -23,10 +23,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     HttpClientModule,
     RouterModule,
-    TranslateModule.forRoot(),
     BrowserAnimationsModule,
     MaterialModule,
-    SharedModule,
+    TranslateModule.forRoot(),
     ShellModule,
     NgbModule,
     AppRoutingModule, // must be imported as the last module as it contains the fallback route

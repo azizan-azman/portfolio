@@ -53,7 +53,6 @@ export class RecentProjectsDetailComponent implements OnInit, OnDestroy {
   }
 
   getHighwayManagementTcsTcssData() {
-    console.log('im in 1');
     this.testDataList.next({
       pageTitle1: 'Toll Collection System',
       pageTitle2: 'Traffic Control Surveillance System',
@@ -293,8 +292,6 @@ export class RecentProjectsDetailComponent implements OnInit, OnDestroy {
               highlight: "Don't Repeat Yourself (DRY) & Keep it Simple (KIS). ",
               paragraph:
                 "In the Highway Management project, multiple apps will have the same styling and components. We are using Nx monorepo to adhere to the DRY (Don't Repeat Yourself) principle and ensure that repeated components are only developed once and can be shared across multiple apps within the monorepo.",
-              // paragraph:
-              //   'In this Highway Management project, multiple apps will have the same stylings and components. Using Nx monorepo enhances our DRY KIS principle, as repeated components are only developed once and can be shared across multiple apps inside the monorepo.',
               bullet: true,
             },
             {
@@ -308,8 +305,7 @@ export class RecentProjectsDetailComponent implements OnInit, OnDestroy {
 
               paragraph:
                 'We implemented a mobile-first approach and utilized Tailwindcss breakpoints to ensure responsive design for our apps.',
-              // paragraph:
-              //   'To ensure a responsive design for our apps, we adopted a mobile-first approach. We also used Tailwindcss breakpoints to code the responsive design.',
+
               bullet: true,
             },
             {
@@ -385,12 +381,7 @@ export class RecentProjectsDetailComponent implements OnInit, OnDestroy {
               paragraph: 'Mentoring and guiding fellow team members.',
               bullet: true,
             },
-            // {
-            //   highlight: '',
-            //   paragraph:
-            //     'Setting up the project infrastructure and ensuring that all necessary tools and resources are in place.',
-            //   bullet: true,
-            // },
+
             {
               highlight: '',
               paragraph: 'Providing clear and thorough documentation for the project.',
@@ -410,7 +401,6 @@ export class RecentProjectsDetailComponent implements OnInit, OnDestroy {
     this.previousProject.next('003');
   }
   getHighwayManagementUserSmartappData() {
-    console.log('im in 2');
     this.testDataList.next({
       pageTitle1: 'User eWallet',
       pageTitle2: '',
@@ -494,8 +484,6 @@ export class RecentProjectsDetailComponent implements OnInit, OnDestroy {
               paragraph:
                 'To deliver a Proof of Concept (POC) for the User eWallet app within 3 months, my team and I decided to use Progressive Web App (PWA) technology to build the app.',
 
-              // paragraph:
-              //   'To deliver the POC of the User eWallet app within 3 months and with a small team of 3 frontend developers, 3 backend developers and 3 testers, my team and I decided to build the app as a PWA.',
               bullet: false,
             },
             {
@@ -696,7 +684,6 @@ export class RecentProjectsDetailComponent implements OnInit, OnDestroy {
     this.previousProject.next('001');
   }
   getVehicleTowingUserSmartappData() {
-    console.log('im in 3');
     this.testDataList.next({
       pageTitle1: 'User Towing App',
       pageTitle2: '',
@@ -826,8 +813,7 @@ export class RecentProjectsDetailComponent implements OnInit, OnDestroy {
               highlight: "Don't Repeat Yourself (DRY) & Keep it Simple (KIS). ",
               paragraph:
                 "To make our codebase cleaner, and easier to read, we applied the principles of DRY (Don't Repeat Yourself) and KIS (Keep it Simple).",
-              // paragraph:
-              //   'In this Highway Management project, multiple apps will have the same stylings and components. Using Nx monorepo enhances our DRY KIS principle, as repeated components are only developed once and can be shared across multiple apps inside the monorepo.',
+
               bullet: true,
             },
 
@@ -896,7 +882,6 @@ export class RecentProjectsDetailComponent implements OnInit, OnDestroy {
 
   navigateToProject(id: any) {
     this._router.navigate([`/recent-projects/project/${id}`]);
-    // document.getElementsByTagName('mat-drawer-content')[0].scrollTo(0, 0);
   }
 
   openDialog(imageData: any) {

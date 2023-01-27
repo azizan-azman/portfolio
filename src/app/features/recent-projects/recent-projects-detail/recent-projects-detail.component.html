@@ -73,8 +73,6 @@
         }} lg:auto-rows-min "
       >
         <div *ngFor="let imageData of data.imageList" class="flex flex-col gap-3">
-          <!-- <img *ngIf="imageData.detailPage" [src]="imageData.link" alt="" class="hover:cursor-pointer"
-              [routerLink]="['/recent-projects/project/',imageData.detailPageRootLink, imageData.detailPageLink]"> -->
           <img
             [src]="imageData.imagePathList[0].imagePath"
             priority="high"

@@ -27,28 +27,4 @@
       </div>
     </ng-template>
   </div>
-
-  <!-- <div *ngFor="let skillGroup of skillList" class="flex flex-col gap-5">
-    <p class="text-2xl font-medium">{{ skillGroup.skillGroupTitle }}</p>
-    <div *ngIf="skillGroup.skillHasImage; else skillWithNoImage"
-      class="grid grid-cols-1 gap-5 lg:gap-10 lg:grid-cols-3">
-      <div *ngFor="let skill of skillGroup.skillGroupList"
-        class="flex flex-col justify-between gap-10 px-5 py-6 bg-opacity-50 rounded-lg shadow-lg bg-colorNeutralDark">
-        <img [src]="skill.skillLogoPath" class="h-40 mx-auto md:h-12 w-fit" alt="" />
-        <div class="flex flex-col items-center gap-2">
-          <p class="text-lg font-medium" style="margin: 0 !important">{{ skill.skillTitle }}<span
-              *ngIf="skill.skillTitle==='Flutter'">&trade;</span> </p>
-          <p class="text-sm font-thin" style="margin: 0 !important">{{ skill.skillYearOfExperience }}</p>
-        </div>
-      </div>
-    </div>
-    <ng-template #skillWithNoImage>
-      <div class="grid grid-cols-1 gap-5 mb-10 md:grid-cols-2">
-        <div *ngFor="let skill of skillGroup.skillGroupList" class="flex items-center gap-2">
-          <div class="w-1 h-1 bg-black rounded-full"></div>
-          <p class="text-lg font-thin" style="margin: 0px !important">{{ skill.skillTitle }}</p>
-        </div>
-      </div>
-    </ng-template>
-  </div> -->
 </div>
