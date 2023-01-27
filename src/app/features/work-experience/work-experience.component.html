@@ -6,7 +6,7 @@
   <div class="flex gap-10" [ngClass]="{ 'mb-10': x }">
     <div class="flex flex-col items-center justify-center">
       <div class="flex-none w-4 h-4 rounded-full bg-colorReactive"></div>
-      <div class="w-0 h-full border border-colorReactive"></div>
+      <div class="h-full border-colorReactive" style="width: 0px !important; border-width: 1px"></div>
     </div>
     <div class="flex flex-col w-full gap-5 font-styleMono">
       <div class="flex flex-col gap-3">
@@ -30,7 +30,7 @@
           <!-- <p>-</p> -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="flex-none text-colorRegularDark w-5 h-5 mt-1"
+            class="flex-none w-5 h-5 mt-1 text-colorRegularDark"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -52,9 +52,9 @@
   </div>
   <div *ngIf="!x" class="flex gap-10">
     <div class="flex items-center justify-center w-4">
-      <div class="w-0 h-full border border-colorReactive"></div>
+      <div class="h-full border-colorReactive" style="width: 0px !important; border-width: 1px"></div>
     </div>
-    <div class="w-10 h-14"></div>
+    <div class="h-14"></div>
   </div>
 </ng-container>
 
