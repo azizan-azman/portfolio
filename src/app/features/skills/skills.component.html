@@ -10,9 +10,9 @@
       class="grid grid-cols-1 gap-5 bg-opacity-50 rounded-lg md:grid-cols-3 bg-colorNeutralDark"
     >
       <div *ngFor="let skill of skillGroup.skillGroupList" class="flex flex-col justify-between px-5 py-5">
-        <div class="flex justify-between gap-2 md:justify-start md:flex-col">
+        <div class="flex items-center justify-between gap-2 md:justify-start md:items-start md:flex-col">
           <p class="text-colorRegularDark" style="margin: 0 !important">{{ skill.skillTitle }}</p>
-          <p class="text-sm italic text-colorReactive" style="margin: 0 !important">
+          <p class="text-xs italic sm:text-sm text-colorReactive" style="margin: 0 !important">
             {{ skill.skillYearOfExperience }}
           </p>
         </div>
@@ -21,7 +21,7 @@
     <ng-template #skillWithNoImage>
       <div class="grid grid-cols-1 gap-5 mb-20 bg-opacity-50 rounded-lg md:grid-cols-3 bg-colorNeutralDark">
         <div *ngFor="let skill of skillGroup.skillGroupList" class="flex items-center gap-3 px-5 py-5">
-          <div class="w-1.5 h-1.5 rounded-full bg-colorReactive"></div>
+          <div class="w-1.5 h-1.5 flex-none rounded-full bg-colorReactive"></div>
           <p class="text-colorRegularDark" style="margin: 0px !important">{{ skill.skillTitle }}</p>
         </div>
       </div>

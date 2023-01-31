@@ -13,7 +13,7 @@ export class WorkExperienceComponent implements OnInit {
       companyLocation: 'Cyberjaya, Selangor',
       jobPoisiton: 'System Engineer',
       jobPoisiton2Flag: true,
-      jobPoisiton2: 'Frontend Developer',
+      jobPoisiton2: 'Front-end Developer',
       jobResponsibilities: [
         {
           responsibility:

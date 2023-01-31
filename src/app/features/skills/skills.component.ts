@@ -13,37 +13,37 @@ export class SkillsComponent implements OnInit {
       skillGroupList: [
         {
           skillTitle: 'Angular',
-          skillYearOfExperience: '4 years experience',
+          skillYearOfExperience: "4 years' experience",
 
           skillLogoPath: '',
         },
         {
           skillTitle: 'Tailwindcss',
-          skillYearOfExperience: '4 years experience',
+          skillYearOfExperience: "4 years' experience",
 
           skillLogoPath: '',
         },
         {
           skillTitle: 'Ionic',
-          skillYearOfExperience: '3 years experience',
+          skillYearOfExperience: "3 years' experience",
 
           skillLogoPath: '',
         },
         {
           skillTitle: 'Bootstrap',
-          skillYearOfExperience: '3 years experience',
+          skillYearOfExperience: "3 years' experience",
 
           skillLogoPath: '',
         },
         {
           skillTitle: 'Nx',
-          skillYearOfExperience: '1 year experience',
+          skillYearOfExperience: "1 year's experience",
 
           skillLogoPath: '',
         },
         {
           skillTitle: 'Flutter',
-          skillYearOfExperience: '1 year experience',
+          skillYearOfExperience: "1 year's experience",
 
           skillLogoPath: '',
         },

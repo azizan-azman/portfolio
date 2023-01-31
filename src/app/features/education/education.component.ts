@@ -16,7 +16,7 @@ export class EducationComponent implements OnInit {
     },
     {
       institutionCertificate: 'Foundation in Engineering and Computer Science',
-      institutionName: 'Center for Foundation Studies IIUM',
+      institutionName: 'Centre for Foundation Studies IIUM',
       institutionLocation: 'Petaling Jaya, Selangor',
       institutionDuration: '2013 - 2014',
       institutionResult: 'CGPA: 3.00',

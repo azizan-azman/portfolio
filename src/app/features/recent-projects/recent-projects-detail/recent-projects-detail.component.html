@@ -83,11 +83,11 @@
 
           <div class="flex justify-between font-styleMono">
             <p class="text-sm">{{ imageData.title }}</p>
-            <p class="text-sm font-thin">{{ imageData.tag }}</p>
+            <p class="text-sm font-light">{{ imageData.tag }}</p>
           </div>
         </div>
       </div>
-      <div class="flex flex-col gap-5 font-styleMono">
+      <div class="flex flex-col order-first gap-5 lg:order-last font-styleMono">
         <p class="text-xl font-semibold tracking-widest text-colorTitleDark">{{ data.topicTitle }}</p>
         <div class="flex flex-col gap-5 text-md">
           <ng-container *ngIf="data.topicBulletPoints === true; else noBulletPoints">
