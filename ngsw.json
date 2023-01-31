@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1674837639548,
+  "timestamp": 1675167979247,
   "index": "https://azizan-azman.github.io/portfolio/index.html",
   "assetGroups": [
     {
@@ -11,19 +11,19 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://azizan-azman.github.io/portfolio/195.a80bbde58000c568.js",
-        "https://azizan-azman.github.io/portfolio/580.ed06a075a2e6200c.js",
-        "https://azizan-azman.github.io/portfolio/716.f673849081fc4581.js",
+        "https://azizan-azman.github.io/portfolio/195.57758a85a362966e.js",
+        "https://azizan-azman.github.io/portfolio/580.805bb7abe3ad1120.js",
+        "https://azizan-azman.github.io/portfolio/716.9dcda96c982b0fd9.js",
         "https://azizan-azman.github.io/portfolio/864.80e539c5ea7692d7.js",
-        "https://azizan-azman.github.io/portfolio/868.a5120aade04890e6.js",
+        "https://azizan-azman.github.io/portfolio/868.3d5dd186cace9cbe.js",
         "https://azizan-azman.github.io/portfolio/favicon.ico",
         "https://azizan-azman.github.io/portfolio/index.html",
         "https://azizan-azman.github.io/portfolio/main.f01f03dba244948a.js",
         "https://azizan-azman.github.io/portfolio/manifest.webmanifest",
         "https://azizan-azman.github.io/portfolio/polyfills.e036088dba48c4fd.js",
-        "https://azizan-azman.github.io/portfolio/runtime.be761b38975dd5ef.js",
+        "https://azizan-azman.github.io/portfolio/runtime.ddb7aaf2f9123cd1.js",
         "https://azizan-azman.github.io/portfolio/scripts.f34257f962042fd8.js",
-        "https://azizan-azman.github.io/portfolio/styles.6a5cec85ffa0ce0d.css"
+        "https://azizan-azman.github.io/portfolio/styles.a901aebc2b07c27b.css"
       ],
       "patterns": []
     },
@@ -61,11 +61,11 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://azizan-azman.github.io/portfolio/195.a80bbde58000c568.js": "a8df92067679c58796747cb545ca507aba985c29",
-    "https://azizan-azman.github.io/portfolio/580.ed06a075a2e6200c.js": "37cca1db44abec5128a423f1ae3ce2aa38e96435",
-    "https://azizan-azman.github.io/portfolio/716.f673849081fc4581.js": "7bad82322c18afbb8085f91e5184226baeeef40f",
+    "https://azizan-azman.github.io/portfolio/195.57758a85a362966e.js": "5f148326ece56db1ac268b94e1031372bda933d9",
+    "https://azizan-azman.github.io/portfolio/580.805bb7abe3ad1120.js": "eaef83d6065279f3bd8041a04781c7cfd5acedec",
+    "https://azizan-azman.github.io/portfolio/716.9dcda96c982b0fd9.js": "d1da21728d914f55443b0dc6a017a235cb409f4e",
     "https://azizan-azman.github.io/portfolio/864.80e539c5ea7692d7.js": "38c183aae7b6fdc76a5d86e3084e75b45bf90e75",
-    "https://azizan-azman.github.io/portfolio/868.a5120aade04890e6.js": "3e406c472562dd1ad0c0f811355445e89753ef60",
+    "https://azizan-azman.github.io/portfolio/868.3d5dd186cace9cbe.js": "1e9103429a24c6ce3ebe9522090d5c41fb9c3635",
     "https://azizan-azman.github.io/portfolio/IBMPlexMono-Italic.3067f4518d673e18.woff": "003d889b6d1a7ed9a4c2147f3da89dad1cf44c25",
     "https://azizan-azman.github.io/portfolio/IBMPlexMono-Italic.a39585f0be557a0b.woff2": "13cca67b4a630cac45d5289d91dedadc17a63fff",
     "https://azizan-azman.github.io/portfolio/IBMPlexMono-Light.363cf80cd98a6f84.woff": "5f2078c469ebe1a33f55c8474ed1b05d26c917d7",
@@ -87,13 +87,13 @@
     "https://azizan-azman.github.io/portfolio/PlayfairDisplay-Regular.c43194ce73241936.woff": "2759df31fa7814e6111407728638b0d8593b813d",
     "https://azizan-azman.github.io/portfolio/apple-touch-icon.png": "c06de4c74ad724943c423a15db0a60f7464c793f",
     "https://azizan-azman.github.io/portfolio/favicon.ico": "35c5015e33b093efd46be89bacb8ff33977874fe",
-    "https://azizan-azman.github.io/portfolio/index.html": "e69e9d2e0355e181ac12a502c59231e301115e82",
+    "https://azizan-azman.github.io/portfolio/index.html": "279a3249645471fb7df60fe8daca6d7ce9c6cd36",
     "https://azizan-azman.github.io/portfolio/main.f01f03dba244948a.js": "5333cf10692acbcdfc91f1443a5153b7ad1d95dd",
     "https://azizan-azman.github.io/portfolio/manifest.webmanifest": "7552f84334546009dc62e2eba02a54f27dd1f55d",
     "https://azizan-azman.github.io/portfolio/polyfills.e036088dba48c4fd.js": "e8470e4d966a951d6fe4715249960c9f2bd27717",
-    "https://azizan-azman.github.io/portfolio/runtime.be761b38975dd5ef.js": "2b0b173e20398854836c5f08ba11daffb5f5908f",
+    "https://azizan-azman.github.io/portfolio/runtime.ddb7aaf2f9123cd1.js": "641f4fd7926340737f9f228b53f77b5cae7b61fd",
     "https://azizan-azman.github.io/portfolio/scripts.f34257f962042fd8.js": "77b90291903364169a50d524da97b4f69444f2a8",
-    "https://azizan-azman.github.io/portfolio/styles.6a5cec85ffa0ce0d.css": "a2bec01668979dae84d2cb7e33bbed8d7f7c534b"
+    "https://azizan-azman.github.io/portfolio/styles.a901aebc2b07c27b.css": "c0666bc2f9b3f9e23d3ccdefd004f5104029460b"
   },
   "navigationUrls": [
     {
