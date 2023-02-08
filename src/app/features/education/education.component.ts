@@ -11,7 +11,7 @@ export class EducationComponent implements OnInit {
       institutionCertificate: 'BEng. in Electronics-Computer and Information (Hons)',
       institutionName: 'International Islamic University Malaysia (IIUM)',
       institutionLocation: 'Gombak, Selangor',
-      institutionDuration: 'Jan 2015 - Jan 2019',
+      institutionDuration: 'Jan. 2015 - Jan. 2019',
       institutionResult: 'CGPA: 3.01',
     },
     {

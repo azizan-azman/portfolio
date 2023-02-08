@@ -13,7 +13,7 @@ export class RecentProjectsListComponent implements OnInit {
       projectTitle: 'Toll Collection System',
       projectTitle2: 'Traffic Control Surveillance System',
       projectType: 'Web App',
-      projectDate: 'Jan 2022 - Dec 2022',
+      projectDate: 'Jan. 2022 - Dec. 2022',
       id: '001',
     },
     {
@@ -22,7 +22,7 @@ export class RecentProjectsListComponent implements OnInit {
       projectTitle: 'User eWallet SmartApp',
       projectTitle2: '',
       projectType: 'Progressive Web App',
-      projectDate: 'Jan 2022 - Dec 2022',
+      projectDate: 'Oct. 2022 - Dec. 2022',
       id: '002',
     },
 
@@ -32,7 +32,7 @@ export class RecentProjectsListComponent implements OnInit {
       projectTitle: 'User Vehicle Towing SmartApp',
       projectTitle2: '',
       projectType: 'Progressive Web App',
-      projectDate: 'Jan 2022 - Dec 2022',
+      projectDate: 'Apr. 2019 - Oct. 2019',
       id: '003',
     },
   ];

@@ -9,7 +9,7 @@ export class WorkExperienceComponent implements OnInit {
   workExperienceList = [
     {
       companyName: 'Silverline Dynamics Sdn Bhd',
-      companyYearsOfService: 'Jan 2019 - Current',
+      companyYearsOfService: 'Apr. 2019 - Current',
       companyLocation: 'Cyberjaya, Selangor',
       jobPoisiton: 'System Engineer',
       jobPoisiton2Flag: true,
@@ -48,7 +48,7 @@ export class WorkExperienceComponent implements OnInit {
     },
     {
       companyName: 'TNBR QATS Sdn Bhd',
-      companyYearsOfService: 'Jan 2018 - March 2018',
+      companyYearsOfService: 'Jan. 2018 - Mar. 2018',
       companyLocation: 'Bangi, Selangor',
       jobPoisiton: 'Sijil Guna Pakai (SGP) Technical Evaluator',
       jobPoisiton2Flag: true,
